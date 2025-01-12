@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Lavoro\AwesomePizza\backend\AwesomePizzaAPI\..\..\publish\backend</_PublishTargetUrl>
+    <History>True|2025-01-11T13:32:38.2230129Z||;True|2025-01-11T14:24:35.0931140+01:00||;True|2025-01-08T21:30:48.9514309+01:00||;True|2023-10-13T16:09:02.9421184+02:00||;True|2023-10-13T16:07:19.5346968+02:00||;True|2023-10-13T16:05:18.5234893+02:00||;True|2023-10-13T15:59:49.4734055+02:00||;True|2023-10-13T15:57:17.7616727+02:00||;True|2023-10-13T15:33:15.6108379+02:00||;True|2023-10-13T15:29:46.3190305+02:00||;True|2023-10-13T15:28:07.0168087+02:00||;True|2023-10-13T15:26:20.1585758+02:00||;True|2023-10-13T14:55:14.7431617+02:00||;True|2023-10-12T17:11:48.4718462+02:00||;True|2023-10-12T17:10:34.3539084+02:00||;True|2023-10-12T17:07:36.6502270+02:00||;True|2023-10-12T17:04:00.4888375+02:00||;True|2023-10-12T17:01:08.3984153+02:00||;True|2023-10-12T16:59:26.5865536+02:00||;True|2023-10-12T16:05:42.2551458+02:00||;True|2023-10-12T10:56:27.2786118+02:00||;</History>
+    <LastFailureDetails />
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="docker">
+      <Value>Server=database%3b Database=endymion%3bUser Id=sa%3bPassword=#password%40%3bTrustServerCertificate=True%3bMultipleActiveResultSets=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

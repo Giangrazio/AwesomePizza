@@ -1,0 +1,82 @@
+.chef-view-container {
+    /*max-width: 1000px;*/
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  
+  .orders-table {
+    width: 100%;
+    border-collapse: initial;
+    margin-top: 20px;
+  }
+  
+  .orders-table th, .orders-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .order-details-row {
+    background-color: #eef;
+  }
+  
+  .order-details-expandible {
+    padding: 10px;
+  }
+  
+  button.action {
+    margin: 5px;
+    padding: 5px 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6347;
+    color: white;
+    transition: background-color 0.3s;
+  }
+
+  .button-inpending {
+    background-color: #FFC107 !important;
+    color: white;
+  }
+  
+  .button-inpreparation {
+    background-color: #007BFF !important;
+    color: white;
+  }
+  
+  .button-completed {
+    background-color: #28A745 !important;
+    color: white;
+  }
+
+  .button-delivered {
+    background-color: #20C997 !important;
+    color: white;
+  }
+  
+  .button-cancelled {
+    background-color: #DC3545 !important;
+    color: white;
+  }
+
+  button.action:disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
+  
+  button:hover {
+    background-color: #ff4500;
+  }
+
+  button.expand-reduce{
+    margin: 8px;
+    display: inline-flex;
+    padding: 4px 7px;
+  }

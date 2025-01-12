@@ -1,0 +1,15 @@
+services:
+    frontend:
+        container_name: awesomepizza-frontend
+        build:
+          context: ./
+          dockerfile: Dockerfile
+        volumes:
+          - ./:/app
+        ports:
+          - "3080:3000"
+        working_dir: /app
+        command: npm run start
+
+
+      

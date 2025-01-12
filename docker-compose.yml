@@ -1,0 +1,43 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: awesomepizza-database
+    volumes:
+      - "./database:/var/opt/mssql/data/"
+    environment:
+      - SA_PASSWORD=#Adesso432@
+      - ACCEPT_EULA=Y
+    ports:
+      - "1414:1433"
+ 
+  frontend:
+    container_name: awesomepizza-frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3080:3000"
+    working_dir: /app
+    command: npm run start
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ./AwesomePizzaAPI/Dockerfile
+    container_name: awesomepizza-backend
+    command: "sh -c '/app/wait-for-it.sh awesomepizza-database:1433 -- dotnet /app/AwesomePizzaAPI.dll'"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - CONNECTIONSTRING=Server=awesomepizza-database; Database=adesso.awesomepizza;User Id=sa;Password=#Adesso432@;TrustServerCertificate=True;MultipleActiveResultSets=true
+    volumes:
+      - "./publish/backend/:/app"
+      - "./wait-for-it.sh:/app/wait-for-it.sh"
+    ports:
+      - "3002:80"
+
+
+
+      
