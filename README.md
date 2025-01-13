@@ -53,31 +53,30 @@ You can run the application in two ways: locally or using Docker.
 3. Run the following command to start the application using Docker Compose:
    ```bash
    docker-compose up --build -d
-4. Access the application at http://localhost:3080 for the frontend and http://localhost:3002 for the backend. 
-5. Using Scripts in package.json 
+4. Access the application at http://localhost:3080 for the frontend and http://localhost:3002 for the backend.       
+5. Using Scripts in package.json
+   The project includes several scripts in the package.json file that can be used to build and manage the application: 
 
-The project includes several scripts in the package.json file that can be used to build and manage the application: 
-
-    Build Backend : Compiles the backend project. 
-    ```bash
-    npm run build:backend
-    ```
-    Start Application : Builds the backend and starts the application using Docker.
-    ```bash
-    npm start
-    ```
-    Restart Application : Stops and restarts the application.
-    ```bash
-    npm run restart
-    ```
-    Stop Application : Stops the Docker containers.
-    ```bash
-    npm run stop
-    ```
-    Run Docker Compose : Builds and runs the Docker containers.
-    ```bash
-    npm run docker
-    ```
+   - Build Backend : Compiles the backend project. 
+     ```bash
+     npm run build:backend
+     ```
+   - Start Application : Builds the backend and starts the application using Docker.
+     ```bash
+     npm start
+     ```
+   - Restart Application : Stops and restarts the application.
+     ```bash
+     npm run restart
+     ```
+   - Stop Application : Stops the Docker containers.
+     ```bash
+     npm run stop
+     ```
+   - Run Docker Compose : Builds and runs the Docker containers.
+     ```bash
+     npm run docker
+     ```
 
 Testing 
 
