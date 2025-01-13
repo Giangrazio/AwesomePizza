@@ -6,6 +6,7 @@
 /frontend/.vscode
 /frontend/node_modules
 /frontend/build
+/frontend/.env
 
 /backend/.vs
 

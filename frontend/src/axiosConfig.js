@@ -1,6 +1,10 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost:3002';
+const isLocal = window.location.hostname === 'localhost';
+
+axios.defaults.baseURL = isLocal
+    ? process.env.REACT_APP_API_URL_LOCAL ?? "http://localhost:3002"
+    : process.env.REACT_APP_API_URL_EXTERNAL;
 
 axios.interceptors.request.use(
     (config) => {
