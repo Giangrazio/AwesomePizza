@@ -12,6 +12,6 @@
         public string FormAuthToken { get; set; } = "spec77e409adsdvccdsdfio12$)(";
         public string ApiSeed { get; set; } = "bdjio%rtyhrgrgb%";
         public string PwdAccountSeedKey { get; set; } = "12ka66teaeerfdcd3mfri3";
-        public string XTokenSecretKey { get; set; } = "sdsiRFpopakOOSffdsf£$&)";
+        public string XTokenSecretKey { get; set; } = "sdsiRFpopakOOSffdsf£$&)fvjfurjhf";
     }
 }
