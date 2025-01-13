@@ -4,11 +4,11 @@
   "description": "order and delivery piazzas",
   "main": "main.js",
   "scripts": {
-    "build:backend":"dotnet build backend/AwesomePizzaAPI/AwesomePizzaAPI.csproj -c Release /p:DeployOnBuild=true /p:PublishProfile=backend/AwesomePizzaAPI/Properties/PublishProfiles/FolderProfile1.pubxml",
+    "build:backend": "dotnet build backend/AwesomePizzaAPI/AwesomePizzaAPI.csproj -c Release /p:DeployOnBuild=true /p:PublishProfile=backend/AwesomePizzaAPI/Properties/PublishProfiles/FolderProfile1.pubxml",
     "start": "npm run build:backend && npm run docker",
     "restart": "npm run stop && npm run start",
     "stop": "docker compose down",
-    "docker": "docker compose up -d"
+    "docker": "docker compose up --build -d"
   },
   "author": "",
   "license": "ISC"
